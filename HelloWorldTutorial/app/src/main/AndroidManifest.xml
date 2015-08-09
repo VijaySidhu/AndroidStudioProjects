@@ -14,7 +14,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Service-->
         <service android:name=".HelloWorldService"/>
+        <!-- -->
+        <receiver android:name=".HelloWorldBroadcastReciever">
+            <intent-filter>
+                <action android:name="CUTOM_INTENT"></action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

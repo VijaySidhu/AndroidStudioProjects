@@ -16,17 +16,27 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
-        <Button android:id="@+id/btnStartService"
+
+        <Button
+            android:id="@+id/btnStartService"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/start_service"
             android:onClick="startService"
-            />
-        <Button android:id="@+id/btnStopService"
+            android:text="@string/start_service" />
+
+        <Button
+            android:id="@+id/btnStopService"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/stop_service"
             android:onClick="stopService"
-            />
+            android:text="@string/stop_service" />
+        <Button
+            android:id="@+id/search_go_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="broadCastIntent"
+            android:text="@string/broadcast_intent" />
     </LinearLayout>
+
+
 </RelativeLayout>

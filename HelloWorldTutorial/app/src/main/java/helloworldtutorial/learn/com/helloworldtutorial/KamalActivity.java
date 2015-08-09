@@ -86,5 +86,12 @@ public class KamalActivity extends Activity {
         stopService(new Intent(getBaseContext(), HelloWorldService.class));
     }
 
+    /*Broad Cast Intent BroadCast Reciever will recieve will intercept this in onRecive method*/
+    public void broadCastIntent(View view) {
+        Intent intent = new Intent();
+        intent.setAction("CUTOM_INTENT");
+        sendBroadcast(intent);
+    }
+
 
 }
