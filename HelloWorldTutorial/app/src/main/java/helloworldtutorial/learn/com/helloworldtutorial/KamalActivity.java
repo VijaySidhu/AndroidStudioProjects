@@ -82,7 +82,7 @@ public class KamalActivity extends Activity {
 
     /*Sample Code To Stop Service*/
 
-    public void stopService() {
+    public void stopService(View view) {
         stopService(new Intent(getBaseContext(), HelloWorldService.class));
     }
 
