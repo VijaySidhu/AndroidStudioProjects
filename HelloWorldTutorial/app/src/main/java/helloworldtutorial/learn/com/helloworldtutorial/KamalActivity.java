@@ -1,9 +1,11 @@
 package helloworldtutorial.learn.com.helloworldtutorial;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 
 /**
  * Created by VijaySidhu on 8/2/2015.
@@ -72,5 +74,17 @@ public class KamalActivity extends Activity {
         super.onDestroy();
         Log.d(msg, "The onDestroy() event");
     }
+
+    /*Sample Code to Start and Stop Services*/
+    public void startService(View view) {
+        startService(new Intent(getBaseContext(), HelloWorldService.class));
+    }
+
+    /*Sample Code To Stop Service*/
+
+    public void stopService() {
+        stopService(new Intent(getBaseContext(), HelloWorldService.class));
+    }
+
 
 }
