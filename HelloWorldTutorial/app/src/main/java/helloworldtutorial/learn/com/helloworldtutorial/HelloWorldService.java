@@ -66,7 +66,7 @@ public class HelloWorldService extends Service {
     }
 
     /**
-     * Called when The service is no longer used and is being destroyed
+     * Called   when The service is no longer used and is being destroyed
      */
     @Override
     public void onDestroy() {
