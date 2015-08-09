@@ -1,0 +1,6 @@
+<resources>
+    <color name="GREEN">#3B5323</color>
+    <string name="app_name">HelloWorldTutorial</string>
+    <string name="Love_Kamal">I Love Sarkaar</string>
+    <string name="hello_world">I Love Sarkaar</string>
+</resources>
